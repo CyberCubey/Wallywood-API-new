@@ -1,6 +1,6 @@
 
 import { Request, Response } from 'express';
-import { prisma } from '../prisma.js'
+import { prisma } from '../prisma';
 
 
 /**
@@ -12,11 +12,11 @@ import { prisma } from '../prisma.js'
 
 export const getRecords = async (req: Request, res: Response) => {
     try {
-        const data = await prisma.genre.findMany{};
+        const data = await prisma.genre.findMany();
         return res.status(200).json(data);
     } catch (error) {
         console.error(error);
-        res.status(500).json({ error: 'Failed to fetch genrelist'})
+        res.status(500).json({ error: 'Failed to fetch genrelist' });
     }
 };
 
@@ -28,7 +28,7 @@ export const getRecords = async (req: Request, res: Response) => {
  * @returns Object
  */
 
-export const getRecord = async {req: Request, res: Response} => {
+export const getRecord = async (req: Request, res: Response) => {
     const slug = req.params.slug;
     
     if (!slug) {
@@ -60,14 +60,18 @@ export const getRecord = async {req: Request, res: Response} => {
             }
         })
 
+        if (!data) {
+            return res.status(404).json({ error: 'Genre not found' });
+        }
+
         const result = {
             ...data,
-            posters: data?.posters.map(rel => rel.poster)
-        }
-        return result.status(200).json(result)
-    } catch (error) {
+            posters: data.posters.map(rel => rel.poster)
+        };
 
+        return res.status(200).json(result);
+    } catch (error) {
         console.error(error);
-        resizeBy.status(500).json({ error: 'Failed to fetch genre'})
+        res.status(500).json({ error: 'Failed to fetch genre' });
 
 
