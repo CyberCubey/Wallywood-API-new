@@ -1,0 +1,11 @@
+rating_id,user_id,product_id,rating,review,review_date
+1,u01,p100,5,Fantastic film! — exactly what I expected.,2025-11-28
+2,u02,p087,4,It was amazing! Highly recommend.,2025-12-02
+3,u03,p432,5,It was pretty good.,2025-10-20
+4,u05,p303,3,Would see again!,2025-09-30
+5,u06,p215,4,Expected more, but it was pretty well-done.,2025-11-12
+6,u07,p701,2,seriously?,2025-12-07
+7,u08,p303,5,AMAZING,2025-12-12
+8,u09,p999,5,Masterpiece, no words,2025-09-02
+9,u10,p120,4,It arrived perfectly fine, other than some mild thumb-prints and scratches on the cover.,2025-12-11
+10,u11,p500,3,Film arrived with minor scuffs but plays fine.,2025-12-09

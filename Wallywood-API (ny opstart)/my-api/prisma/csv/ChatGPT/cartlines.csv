@@ -1,0 +1,13 @@
+cart_id,user_id,product_id,product_name,quantity,unit_price,added_date
+1001,u01,p100,Sonic Hedgehog,1,349.99,2025-11-20T14:03:00
+1001,u01,p215,Trolls på Verdensturne,2,19.5,2025-11-20T14:05:00
+1002,u02,p087,Frost 2,1,29.99,2025-12-01T09:21:00
+1003,u03,p432,The Grudge,1,59.0,2025-10-15T20:12:00
+1004,u04,p120,Spioner på Missioner,1,24.99,2025-12-08T11:00:00
+1005,u05,p303,Terminator - Dark Fate,3,8.75,2025-09-22T16:40:00
+1006,u02,p500,21 Bridges,2,12.99,2025-12-10T19:30:00
+1007,u06,p215,Toy Story 4,1,19.5,2025-11-11T08:15:00
+1008,u07,p701,Captain Marvel,1,129.95,2025-12-05T12:45:00
+1009,u08,p303,Hotel Transylvania 3: Monsterferie,1,8.75,2025-12-12T07:55:00
+1010,u09,p999,En Lille Film om Kunsten at Dræbe,1,14.99,2025-08-30T23:02:00
+1011,u10,p120,Gummy T,2,24.99,2025-12-10T10:10:00
